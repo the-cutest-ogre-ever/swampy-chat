@@ -1,4 +1,4 @@
-package ru.chat.swampy.handlers;
+package ru.chat.swampy.websocket.handler;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
