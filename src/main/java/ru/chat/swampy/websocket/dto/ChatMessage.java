@@ -1,5 +1,6 @@
 package ru.chat.swampy.websocket.dto;
 
+import ru.chat.swampy.websocket.util.StringUtils;
 import lombok.Getter;
 import lombok.Setter;
 
