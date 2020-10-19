@@ -1,8 +1,8 @@
 package ru.chat.swampy.websocket.dto;
 
-import ru.chat.swampy.websocket.util.StringUtils;
 import lombok.Getter;
 import lombok.Setter;
+import ru.chat.swampy.websocket.util.StringUtils;
 
 @Getter
 @Setter
@@ -20,5 +20,6 @@ public class ChatMessage {
         this.from = from;
         this.text = text;
         this.recipient = recipient;
+        this.time = StringUtils.getCurrentTimeStamp();
     }
 }
