@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
     <title>Title</title>
     <th:block th:include = "fragments/common.html :: headerfiles"></th:block>
 </head>
@@ -9,7 +8,7 @@
     <div class="container">
         <div class="py-5 text-center">
             <a href="/"><h2>WebSocket</h2></a>
-            <p class="lead">WebSocket Broadcast - with STOPM</p>
+            <p class="lead">WebSocket Broadcast - with STOMP</p>
         </div>
         <div class="row">
             <div class="col-md-6">
@@ -24,7 +23,7 @@
                 </div>
                 <div class="mb-3">
                     <div class="input-group" id="sendmessage" style="display: none;">
-                        <input type="text" id="message" class="form-control" placeholder="Message">
+                        <input type="text" id="message" class="form-control" placeholder="Message"/>
                         <div class="input-group-append">
                             <button id="send" class="btn btn-primary" onclick="send()">Send</button>
                         </div>
@@ -58,7 +57,6 @@
             } else {
                 $("#sendmessage").hide();
             }
-            ;;;
         }
 
         function connect() {
