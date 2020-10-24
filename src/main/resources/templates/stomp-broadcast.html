@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Title</title>
-    <th:block th:include = "fragments/common.html :: headerfiles"></th:block>
+    <th:block th:include="fragments/common.html :: headerfiles"></th:block>
 </head>
 <body>
     <div class="container">
@@ -23,7 +23,7 @@
                 </div>
                 <div class="mb-3">
                     <div class="input-group" id="sendmessage" style="display: none;">
-                        <input type="text" id="message" class="form-control" placeholder="Message"/>
+                        <input type="text" id="message" class="form-control" placeholder="Message">
                         <div class="input-group-append">
                             <button id="send" class="btn btn-primary" onclick="send()">Send</button>
                         </div>
