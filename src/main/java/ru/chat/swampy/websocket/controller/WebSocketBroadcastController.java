@@ -9,9 +9,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class WebSocketBroadcastController {
 
+    /*
     @GetMapping("/stomp-broadcast")
     public String getWebSocketBroadcast() {
         return "stomp-broadcast";
+    }
+     */
+
+    @GetMapping("/sockjs-broadcast")
+    public String getWebSocketWithSockJsBroadcast() {
+        return "sockjs-broadcast";
     }
 
     @MessageMapping("/broadcast")
